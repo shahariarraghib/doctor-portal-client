@@ -1,5 +1,17 @@
 Project Live preivew link ► https://doctor-portal-client-844f5.web.app/
 
+The Package uses in this project:
+
+hiroku cloud application platform\
+React Material Ui\
+React Router\
+Firebase Authentication and hosting\
+Emotion core\
+Material UI carousel\
+@mui/lab
+
+Service demo image►
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
