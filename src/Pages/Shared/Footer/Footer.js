@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Link, Stack } from '@mui/material';
+import { Box, Button, Container, Divider, Grid, Link, Stack } from '@mui/material';
 import React from 'react';
 import footerBg from '../../../images/footer-bg.png'
 import { blue, pink } from '@mui/material/colors';
@@ -19,7 +19,7 @@ const Footer = () => {
         <Container style={footerBgStyle} >
 
 
-            <Box sx={{ flexGrow: 1, mt: 5 }} >
+            <Box sx={{ flexGrow: 1, mt: 5, mb: 5 }} >
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={4}>
                         <h1>About Company</h1>
@@ -64,7 +64,11 @@ const Footer = () => {
                     </Grid>
 
                 </Grid>
+
+                <Divider />
+                <small >Copyright © 2022 - All right reserved</small>
             </Box>
+
         </Container >
     );
 };
