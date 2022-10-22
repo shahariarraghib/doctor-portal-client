@@ -14,7 +14,8 @@ Service demo image ►
 ![Doctor-Portal full page ss1](https://user-images.githubusercontent.com/58640846/197362779-6e54c719-c9e7-4b8b-bb55-2f973bb12e82.png)
 
 Appointment image ►
-![Doctor-PortaAl](https://user-images.githubusercontent.com/58640846/173382333-c86de98b-0cf2-4d7b-80d9-17bbfa7a7b29.png)
+![Doctor-Portal appointment](https://user-images.githubusercontent.com/58640846/197362802-3a99df7b-d0e1-48e0-a2c4-1b1a5c049dbd.png)
+
 
 Deshboard image ►
 ![Doctor-Portal deshBoard](https://user-images.githubusercontent.com/58640846/197362784-18279ca4-31d2-4ccd-a83f-c11cee9cd63a.png)
