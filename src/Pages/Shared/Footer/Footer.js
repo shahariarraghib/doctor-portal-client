@@ -1,76 +1,351 @@
-import { Box, Button, Container, Divider, Grid, Link, Stack } from '@mui/material';
-import React from 'react';
-import footerBg from '../../../images/footer-bg.png'
-import { blue, pink } from '@mui/material/colors';
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { NavLink } from 'react-router-dom';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import MailIcon from '@mui/icons-material/Mail';
+import { Box, Container, Grid, Typography } from "@mui/material";
+import React from "react";
+import facebook from "../../../images/icons/FaceBook.png";
+import instragram from "../../../images/icons/Instragram.png";
+import google from "../../../images/icons/google.png";
+import twiter from "../../../images/icons/twiter.png";
+import youtube from "../../../images/icons/youtube.png";
+import footerBg from "../../../images/footerBg.png";
 
 const footerBgStyle = {
-    background: `url(${footerBg})`,
+  background: `url(${footerBg})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+};
 
-
-}
 const Footer = () => {
-    return (
-        <Container style={footerBgStyle} >
+  return (
+    <Box style={footerBgStyle}>
+      <Container sx={{ marginTop: "78px" }}>
+        <Grid
+          container
+          spacing={3}
+          sx={{ paddingTop: "43px", paddingBottom: "32px" }}
+        >
+          <Grid item xs={12} md={4}>
+            <Typography>
+              <span
+                style={{
+                  color: "#2D89FF",
+                }}
+              >
+                Doc
+              </span>
+              <span
+                style={{
+                  color: "#642DFF",
+                }}
+              >
+                mic.
+              </span>
+            </Typography>
 
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "14px",
+                fontWeight: "400",
+                color: "paragraph1.main",
+              }}
+            >
+              simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has bee
+            </Typography>
 
-            <Box sx={{ flexGrow: 1, mt: 5, mb: 5 }} >
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={4}>
-                        <h1>About Company</h1>
-                        <p>A company can be created as a legal person so that the company itself has limited liability as members perform or fail to discharge their duty according to the publicly declared incorporation, or published policy.</p>
-
-                        <Link href="https://www.facebook.com/shahariar.raghib/" target="_blank"><FacebookOutlinedIcon sx={{ fontSize: 35, color: blue[800] }} /></Link>
-                        <Link href="https://www.instagram.com/shahariar_raghib/" target="_blank"> <InstagramIcon sx={{ fontSize: 35, color: pink[800] }} /></Link>
-
-                        <Link href="https://www.linkedin.com/in/shahariar-bhuiyan-2a6b04130/" target="_blank"> <LinkedInIcon sx={{ fontSize: 35, color: blue[800] }} /></Link>
-                    </Grid>
-                    <Grid item xs={12} md={4} >
-                        <h1>Useful Links</h1>
-
-
-                        <Box >
-                            <NavLink style={{ textDecoration: 'none' }} to="/home">Home</NavLink>
-                        </Box>
-
-                        <Box >
-                            <NavLink style={{ textDecoration: 'none' }} to="/appointment">Appointment</NavLink>
-                        </Box>
-
-                        <Box >
-                            <NavLink style={{ textDecoration: 'none' }} to="/deshboard">Deshboard</NavLink>
-                        </Box>
-
-
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                        <h1>Contact Us</h1>
-                        <Stack >
-                            <Link style={{ textDecoration: 'none', }} href="tel: +8801689797288" > <Button variant="text" startIcon={<LocalPhoneIcon />}>
-                                +8801689797288
-                            </Button></Link>
-
-                            <Link style={{ textDecoration: 'none' }} href="https://mail.google.com/" > <Button variant="text" startIcon={<MailIcon />}>
-                                sr.raghib@gmail.com
-                            </Button></Link>
-
-
-                        </Stack>
-                    </Grid>
-
-                </Grid>
-
-                <Divider />
-                <small >Copyright © 2022 - All right reserved</small>
+            <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+              <Box
+                sx={{
+                  background: "#E8EEF6",
+                  width: "45px",
+                  height: "45px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "50%",
+                }}
+              >
+                <img
+                  style={{ width: "32px", height: "32px" }}
+                  src={facebook}
+                  alt=""
+                />
+              </Box>
+              <Box
+                sx={{
+                  background: "#E8EEF6",
+                  width: "45px",
+                  height: "45px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "50%",
+                }}
+              >
+                <img
+                  style={{ width: "32px", height: "32px" }}
+                  src={instragram}
+                  alt=""
+                />
+              </Box>
+              <Box
+                sx={{
+                  background: "#E8EEF6",
+                  width: "45px",
+                  height: "45px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "50%",
+                }}
+              >
+                <img
+                  style={{ width: "32px", height: "32px" }}
+                  src={google}
+                  alt=""
+                />
+              </Box>
+              <Box
+                sx={{
+                  background: "#E8EEF6",
+                  width: "45px",
+                  height: "45px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "50%",
+                }}
+              >
+                <img
+                  style={{ width: "32px", height: "32px" }}
+                  src={twiter}
+                  alt=""
+                />
+              </Box>
+              <Box
+                sx={{
+                  background: "#E8EEF6",
+                  width: "45px",
+                  height: "45px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "50%",
+                }}
+              >
+                <img
+                  style={{ width: "32px", height: "32px" }}
+                  src={youtube}
+                  alt=""
+                />
+              </Box>
             </Box>
+            <Typography
+              variant="p"
+              sx={{
+                fontSize: "10px",
+                fontWeight: "400",
+                color: "paragraph1.main",
+              }}
+            >
+              Copyright @222 Medicom All Rights Reserved
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={2}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "14px",
+                fontWeight: "500",
+                color: "primary.main",
+              }}
+            >
+              Quick Linls
+            </Typography>
 
-        </Container >
-    );
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+              }}
+            >
+              About Us
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+              }}
+            >
+              Our Pricing
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+              }}
+            >
+              Our Gallery
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+              }}
+            >
+              Appointment
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+              }}
+            >
+              Privacy Policy
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} md={2}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+                marginTop: "20px",
+              }}
+            >
+              Services
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+              }}
+            >
+              Our Doctors
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+              }}
+            >
+              Our Latest News
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+              }}
+            >
+              Careers
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "textB.secondary",
+              }}
+            >
+              Contact Us
+            </Typography>
+          </Grid>
+          {/* Opening Hours */}
+          <Grid item xs={12} md={3}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "14px",
+                fontWeight: "500",
+                color: "secondary.main",
+              }}
+            >
+              Opening Hours
+            </Typography>
+
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <span style={{ color: "#2D89FF" }}>Mon-Tue</span>
+              <span>08:00 AM-05:00 PM</span>
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <span style={{ color: "#2D89FF" }}>Wed- Thu</span>
+              <span>09:00 AM-06:00 PM</span>
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <span style={{ color: "#2D89FF" }}>Fri-Sat</span>
+              <span>10:00 AM-07:00 PM</span>
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <span style={{ color: "#2D89FF" }}>Sunday</span>
+              <span>Emergency Only</span>
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: "12px",
+                fontWeight: "400",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <span style={{ color: "#2D89FF" }}>Personal</span>
+              <span>Mon-05:00 PM</span>
+            </Typography>
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
+  );
 };
 
 export default Footer;

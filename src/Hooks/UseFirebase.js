@@ -132,20 +132,6 @@ const useFirebase = () => {
             .then()
     }
 
-
-    // const saveUserg = (email, displayName) => {
-    //     const user = { email, displayName };
-    //     fetch('https://doctor-portal006.herokuapp.com/userInfo', {
-    //         method: 'PUT',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(user)
-    //     })
-
-    //         .then()
-    // }
-
     // admin chack
 
     useEffect(() => {

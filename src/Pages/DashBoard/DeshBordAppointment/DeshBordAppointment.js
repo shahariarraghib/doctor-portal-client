@@ -7,6 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { Link } from 'react-router-dom';
 
 const DeshBordAppointment = ({ date }) => {
     const { user, token } = useAuth()
@@ -36,6 +37,7 @@ const DeshBordAppointment = ({ date }) => {
                             <TableCell align="right">Service Name</TableCell>
                             <TableCell align="right">Date</TableCell>
                             <TableCell align="right">Mobile Number</TableCell>
+                            <TableCell align="right">Payment</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -51,6 +53,8 @@ const DeshBordAppointment = ({ date }) => {
                                 <TableCell align="right">{row.serviceName}</TableCell>
                                 <TableCell align="right">{row.date}</TableCell>
                                 <TableCell align="right">{row.phoneNumber}</TableCell>
+                                <TableCell align="right">{row.payment ? 'paid' :
+                                    <Link to={`payment/${row._id}`}><button>Pay</button></Link>}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>

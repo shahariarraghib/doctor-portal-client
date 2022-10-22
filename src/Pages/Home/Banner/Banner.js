@@ -1,46 +1,172 @@
-import React from 'react';
-import chair from '../../../images/chair.png'
-import bg from '../../../images/bg.png'
-import { Box, Button, Container, Grid, Typography } from '@mui/material';
-import { height } from '@mui/system';
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import React from "react";
+// import pose2 from "../../../images/bannerPic.png";
+import ellipse5 from "../../../images/Ellipse_5.png";
+import "./banner.css";
+// import vactor01 from "../../../images/icons/Vector01.png";
+import { Link } from "react-router-dom";
 
-const bannerBg = {
-    background: `url(${bg})`,
+const bannerBgStyle = {
+  background: `url(${ellipse5})`,
+  backgroundRepeat: "no-repeat",
+};
 
-}
-
-const verticalCenter = {
-    display: 'flex',
-    alignItems: 'center',
-    height: 550
-}
 const Banner = () => {
-    return (
-        <div>
+  return (
+    <Container>
+      <Grid sx={{ mt: 2 }} container spacing={0}>
+        {/* left grid */}
 
-            <Container sx={{ flexGrow: 1, border: 1 }} style={bannerBg}>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={6} style={{ ...verticalCenter, textAlign: 'left', }}>
-                        <Box>
-                            <Typography variant='h3'>
-                                Your New Smile <br />
-                                Starts Here
-                            </Typography>
-                            <Typography variant='h7' sx={{ fontSize: 14, color: 'gray', }}>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloribus.
-                            </Typography> <br />
+        <Grid item xs={12} md={6}>
+          <Typography variant="h2" component="div">
+            Your <span style={{ color: "#2D89FF" }}>Health</span> Is Our Top
+            <span style={{ color: "#642DFF" }}> Priority</span>
+          </Typography>
 
-                            <Button variant="contained" style={{ backgroundColor: '#59EBF2' }}>Get Appointment</Button>
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} md={5} style={verticalCenter}>
-                        <img style={{ width: '450px' }} src={chair} alt="" />
-                    </Grid>
+          <Typography
+            variant="p"
+            component="div"
+            sx={{
+              mt: 2,
+              color: "textB.secondary",
+              fontWeight: "400",
+            }}
+          >
+            There are many variations of passages of lpsum <br /> available, but
+            the majority hae suffered.
+          </Typography>
 
-                </Grid>
-            </Container>
-        </div >
-    );
+          <Box sx={{ flexGrow: 0 }}>
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              to="/appointment"
+            >
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "primary.main",
+                  fontSize: "16px",
+                  fontWeight: "500",
+                  padding: "20px 15px",
+                  marginTop: "32px",
+                }}
+              >
+                MAKE AN APPOINTMENT
+              </Button>
+            </Link>
+          </Box>
+
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-around",
+              marginTop: "56px",
+            }}
+          >
+            <Box>
+              <Typography
+                variant="p"
+                component="div"
+                sx={{
+                  mt: 2,
+                  color: "secondary.main",
+                  fontWeight: "600",
+                  textAlign: "center",
+                  fontSize: "24px",
+                }}
+              >
+                262k+
+              </Typography>
+              <Typography
+                variant="p"
+                component="div"
+                sx={{
+                  mt: 2,
+                  color: " paragraph1.main",
+                  fontWeight: "400",
+                  fontSize: "14px",
+                  marginTop: "-5px",
+                }}
+              >
+                Recovered Patients
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="p"
+                component="div"
+                sx={{
+                  mt: 2,
+                  color: "secondary.main",
+                  fontWeight: "600",
+                  textAlign: "center",
+                  fontSize: "24px",
+                }}
+              >
+                96%
+              </Typography>
+              <Typography
+                variant="p"
+                component="div"
+                sx={{
+                  mt: 2,
+                  color: " paragraph1.main",
+                  fontWeight: "400",
+                  fontSize: "14px",
+                  marginTop: "-5px",
+                }}
+              >
+                Satisfaction Rate
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="p"
+                component="div"
+                sx={{
+                  mt: 2,
+                  color: "secondary.main",
+                  fontWeight: "600",
+                  textAlign: "center",
+                  fontSize: "24px",
+                }}
+              >
+                86+
+              </Typography>
+              <Typography
+                variant="p"
+                component="div"
+                sx={{
+                  mt: 2,
+                  color: " paragraph1.main",
+                  fontWeight: "400",
+                  fontSize: "14px",
+                  marginTop: "-5px",
+                }}
+              >
+                Expert Doctors
+              </Typography>
+            </Box>
+          </Box>
+        </Grid>
+
+        {/* right grid */}
+        <Grid item sx={{ marginTop: { xs: "50PX", md: "0px" } }} xs={12} md={6}>
+          <Box sx={{}}>
+            <Box style={bannerBgStyle}>
+              <img
+                style={{
+                  width: "90%",
+                }}
+                src="https://i.ibb.co/MnP4qjY/banner-Pic.png"
+                alt=""
+              />
+            </Box>
+          </Box>
+        </Grid>
+      </Grid>
+    </Container>
+  );
 };
 
 export default Banner;
