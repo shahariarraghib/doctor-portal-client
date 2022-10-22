@@ -11,7 +11,8 @@ Material UI carousel\
 @mui/lab
 
 Service demo image ►
-![Doctor-Portal](https://user-images.githubusercontent.com/58640846/173381660-c379a082-4dcf-429d-aac9-fcf767a4591f.png)
+![Doctor-Portal full page ss](https://user-images.githubusercontent.com/58640846/197362630-dfdf6f53-9e82-43f7-ab8c-a2354479b223.png)
+
 Appointment image ►
 ![Doctor-PortaAl](https://user-images.githubusercontent.com/58640846/173382333-c86de98b-0cf2-4d7b-80d9-17bbfa7a7b29.png)
 
