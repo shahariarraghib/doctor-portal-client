@@ -11,13 +11,16 @@ Material UI carousel\
 @mui/lab
 
 Service demo image ►
-![Doctor-Portal full page ss](https://user-images.githubusercontent.com/58640846/197362630-dfdf6f53-9e82-43f7-ab8c-a2354479b223.png)
+
+ps://user-images.githubusercontent.com/58640846/197362630-dfdf6f53-9e82-43f7-ab8c-a2354479b223.png)
 
 Appointment image ►
 ![Doctor-PortaAl](https://user-images.githubusercontent.com/58640846/173382333-c86de98b-0cf2-4d7b-80d9-17bbfa7a7b29.png)
 
 Deshboard image ►
-![Doctor-PortalD](https://user-images.githubusercontent.com/58640846/173382054-4fce8154-5be5-4fd0-9063-a4500fc3f2f7.png)
+
+
+![Doctor-Portal deshBoard](https://user-images.githubusercontent.com/58640846/197362757-7ac5c75d-25e1-4ade-ac46-41b67ca65487.png)
 
 Movile Viewe ►
 
